@@ -71,6 +71,9 @@ const Contact: React.FC<ContactProps> = ({ onInViewChange }) => {
   return (
     <Section id="contact" onInViewChange={onInViewChange}>
       <h2 className="section-title">Contact Us</h2>
+      <p style={{ textAlign: 'center', marginBottom: '2rem', fontSize: '1.1rem', color: 'var(--text-color)' }}>
+        You can reach us at: <a href="mailto:management@zenark.in" style={{ color: 'var(--primary-color)', textDecoration: 'none' }}>management@zenark.in</a>
+      </p>
       <div className="contact-form-container">
         {currentStep < formFields.length ? (
           <form onSubmit={handleSubmit}>

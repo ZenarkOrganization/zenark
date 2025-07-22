@@ -38,7 +38,15 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
     <header className={scrolled ? 'scrolled' : ''}>
       <nav>
         <div className="logo">
-          <a href="#hero" className="logo-text">Zenark</a>
+          <a href="#hero" className="logo-text">
+            <span style={{
+              background: `linear-gradient(45deg, var(--primary-color), var(--secondary-color))`,
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              fontSize: '1.5rem',
+              fontWeight: 'bold'
+            }}>Z</span>enark
+          </a>
         </div>
         <div className={`nav-links-container ${isMenuOpen ? 'open' : ''}`}>
           <ul className="nav-links">
